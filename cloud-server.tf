@@ -1,7 +1,7 @@
 resource "selectel_vpc_keypair_v2" "keypair_1" {
   name       = "keypair"
   public_key = file("~/.ssh/id_ed25519.pub")
-  user_id    = var.project_serviceuser_id
+  user_id    = var.serviceuser_id
   regions    = ["ru-9"]
 }
 #TODO id_rsa
